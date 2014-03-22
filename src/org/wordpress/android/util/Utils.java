@@ -4,7 +4,7 @@ import android.content.Context;
 import android.content.res.Configuration;
 import android.util.TypedValue;
 
-import org.wordpress.android.BuildConfig;
+import org.wordpress.android.BuildConfigCustom;
 import org.wordpress.android.R;
 import org.wordpress.android.WordPress;
 
@@ -70,7 +70,7 @@ public class Utils {
      * You can check the (BuildConfig.DEBUG) constant in your code to run debug-only functions.
      */
     public static boolean isDebugBuild() {
-        if (BuildConfig.DEBUG) {
+        if (BuildConfigCustom.DEBUG) {
             return true;
         }
         return false;

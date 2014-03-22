@@ -1,4 +1,4 @@
-package org.wordpress;
+package org.wordpress.android;
 
 import android.content.Context;
 import android.database.Cursor;

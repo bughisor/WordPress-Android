@@ -1849,7 +1849,7 @@ public class WordPressDB {
         }
     }
 
-    protected void clearNotes() {
+    public void clearNotes() {
         db.delete(NOTES_TABLE, null, null);
     }
 
