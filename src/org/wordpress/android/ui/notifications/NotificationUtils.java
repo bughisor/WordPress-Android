@@ -25,7 +25,7 @@ import org.json.JSONArray;
 import org.json.JSONException;
 import org.json.JSONObject;
 
-import org.wordpress.android.BuildConfig;
+import org.wordpress.android.BuildConfigCustom;
 import org.wordpress.android.WordPress;
 import org.wordpress.android.models.Note;
 import org.wordpress.android.util.AppLog.T;
@@ -258,9 +258,9 @@ public class NotificationUtils {
     
     public static String getAppPushNotificationsName(){
         //white listing only few keys.
-        if (BuildConfig.APP_PN_KEY.equals("org.wordpress.android.beta.build"))
+        if (BuildConfigCustom.APP_PN_KEY.equals("org.wordpress.android.beta.build"))
                 return "org.wordpress.android.beta.build";
-        if (BuildConfig.APP_PN_KEY.equals("org.wordpress.android.debug.build"))
+        if (BuildConfigCustom.APP_PN_KEY.equals("org.wordpress.android.debug.build"))
             return "org.wordpress.android.debug.build";
         
         return "org.wordpress.android.playstore";        

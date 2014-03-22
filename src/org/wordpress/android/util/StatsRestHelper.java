@@ -19,7 +19,7 @@ import org.json.JSONArray;
 import org.json.JSONException;
 import org.json.JSONObject;
 
-import org.wordpress.android.BuildConfig;
+import org.wordpress.android.BuildConfigCustom;
 import org.wordpress.android.WordPress;
 import org.wordpress.android.datasets.StatsBarChartDataTable;
 import org.wordpress.android.datasets.StatsClickGroupsTable;
@@ -246,7 +246,7 @@ public class StatsRestHelper {
                     }
                     
                     ContentResolver resolver = context.getContentResolver();
-                    resolver.applyBatch(BuildConfig.STATS_PROVIDER_AUTHORITY, operations);
+                    resolver.applyBatch(BuildConfigCustom.STATS_PROVIDER_AUTHORITY, operations);
                     resolver.notifyChange(StatsContentProvider.STATS_CLICK_GROUP_URI, null);
                     resolver.notifyChange(StatsContentProvider.STATS_CLICKS_URI, null);
                     
@@ -333,7 +333,7 @@ public class StatsRestHelper {
                     }
 
                     ContentResolver resolver = context.getContentResolver();
-                    resolver.applyBatch(BuildConfig.STATS_PROVIDER_AUTHORITY, operations);
+                    resolver.applyBatch(BuildConfigCustom.STATS_PROVIDER_AUTHORITY, operations);
                     resolver.notifyChange(StatsContentProvider.STATS_MOST_COMMENTED_URI, null);
                 } catch (JSONException e) {
                     e.printStackTrace();
@@ -380,7 +380,7 @@ public class StatsRestHelper {
                     }
 
                     ContentResolver resolver = context.getContentResolver();
-                    resolver.applyBatch(BuildConfig.STATS_PROVIDER_AUTHORITY, operations);
+                    resolver.applyBatch(BuildConfigCustom.STATS_PROVIDER_AUTHORITY, operations);
                     resolver.notifyChange(StatsContentProvider.STATS_TOP_COMMENTERS_URI, null);
                 } catch (JSONException e) {
                     e.printStackTrace();
@@ -470,7 +470,7 @@ public class StatsRestHelper {
                     }
 
                     ContentResolver resolver = context.getContentResolver();
-                    resolver.applyBatch(BuildConfig.STATS_PROVIDER_AUTHORITY, operations);
+                    resolver.applyBatch(BuildConfigCustom.STATS_PROVIDER_AUTHORITY, operations);
                     resolver.notifyChange(StatsContentProvider.STATS_REFERRER_GROUP_URI, null);
                     resolver.notifyChange(StatsContentProvider.STATS_REFERRERS_URI, null);
                 } catch (JSONException e) {
@@ -544,7 +544,7 @@ public class StatsRestHelper {
                     }
                     
                     ContentResolver resolver = context.getContentResolver();
-                    resolver.applyBatch(BuildConfig.STATS_PROVIDER_AUTHORITY, operations);
+                    resolver.applyBatch(BuildConfigCustom.STATS_PROVIDER_AUTHORITY, operations);
                     resolver.notifyChange(StatsContentProvider.STATS_SEARCH_ENGINE_TERMS_URI, null);
                     
                 } catch (JSONException e) {
@@ -612,7 +612,7 @@ public class StatsRestHelper {
                     }
                     
                     ContentResolver resolver = context.getContentResolver();
-                    resolver.applyBatch(BuildConfig.STATS_PROVIDER_AUTHORITY, operations);
+                    resolver.applyBatch(BuildConfigCustom.STATS_PROVIDER_AUTHORITY, operations);
                     resolver.notifyChange(StatsContentProvider.STATS_TAGS_AND_CATEGORIES_URI, null);
                 } catch (JSONException e) {
                     e.printStackTrace();
@@ -680,7 +680,7 @@ public class StatsRestHelper {
                     }
                     
                     ContentResolver resolver = context.getContentResolver();
-                    resolver.applyBatch(BuildConfig.STATS_PROVIDER_AUTHORITY, operations);
+                    resolver.applyBatch(BuildConfigCustom.STATS_PROVIDER_AUTHORITY, operations);
                     resolver.notifyChange(StatsContentProvider.STATS_TOP_AUTHORS_URI, null);
                 } catch (JSONException e) {
                     e.printStackTrace();
@@ -750,7 +750,7 @@ public class StatsRestHelper {
                     }
                     
                     ContentResolver resolver = context.getContentResolver();
-                    resolver.applyBatch(BuildConfig.STATS_PROVIDER_AUTHORITY, operations);
+                    resolver.applyBatch(BuildConfigCustom.STATS_PROVIDER_AUTHORITY, operations);
                     resolver.notifyChange(StatsContentProvider.STATS_TOP_POSTS_AND_PAGES_URI, null);
                 } catch (JSONException e) {
                     e.printStackTrace();
@@ -816,7 +816,7 @@ public class StatsRestHelper {
                     }
                     
                     ContentResolver resolver = context.getContentResolver();
-                    resolver.applyBatch(BuildConfig.STATS_PROVIDER_AUTHORITY, operations);
+                    resolver.applyBatch(BuildConfigCustom.STATS_PROVIDER_AUTHORITY, operations);
                     resolver.notifyChange(StatsContentProvider.STATS_VIDEOS_URI, null);
                 } catch (JSONException e) {
                     e.printStackTrace();
@@ -884,7 +884,7 @@ public class StatsRestHelper {
                     }
                     
                     ContentResolver resolver = context.getContentResolver();
-                    resolver.applyBatch(BuildConfig.STATS_PROVIDER_AUTHORITY, operations);
+                    resolver.applyBatch(BuildConfigCustom.STATS_PROVIDER_AUTHORITY, operations);
                     resolver.notifyChange(StatsContentProvider.STATS_GEOVIEWS_URI, null);
                 } catch (JSONException e) {
                     e.printStackTrace();
@@ -1036,7 +1036,7 @@ public class StatsRestHelper {
                     }
                     
                     ContentResolver resolver = context.getContentResolver();
-                    resolver.applyBatch(BuildConfig.STATS_PROVIDER_AUTHORITY, operations);
+                    resolver.applyBatch(BuildConfigCustom.STATS_PROVIDER_AUTHORITY, operations);
                     resolver.notifyChange(uri, null);
                 } catch (JSONException e) {
                     e.printStackTrace();

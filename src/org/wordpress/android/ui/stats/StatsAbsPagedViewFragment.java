@@ -150,7 +150,7 @@ public abstract class StatsAbsPagedViewFragment extends StatsAbsViewFragment imp
         
     @Override
     public void onCursorLoaded(Uri uri, Cursor cursor) {
-        if (!cursor.moveToFirst())
+        if (cursor == null || !cursor.moveToFirst())
             return;
         
         if (cursor.getColumnIndex("date") == -1)

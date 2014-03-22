@@ -97,7 +97,7 @@ public class StatsBarGraphFragment extends SherlockFragment implements LoaderMan
     @Override
     public void onLoadFinished(Loader<Cursor> loader, Cursor cursor) {
 
-        if (getActivity() == null)
+        if (getActivity() == null || cursor == null)
             return;
 
         if (!cursor.moveToFirst() || cursor.getCount() == 0) {
